@@ -1,1 +1,5 @@
+com\globant\BaseBrowser.class
+com\globant\DeactivateUserTest.class
 com\globant\AppTest.class
+com\globant\LogOutTest.class
+com\globant\LoginTest.class

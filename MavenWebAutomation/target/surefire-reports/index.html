@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,26 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.globant.LoginTest" class="method navigator-link" hash-for-method="IncorrectLogIn(incorrectEmail@email.com, incorrectPassword)">IncorrectLogIn(incorrectEmail@email.com, incorrectPassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.globant.DeactivateUserTest" class="method navigator-link" hash-for-method="TestDeactivateUser(correctEmail@email.com, correctPassword)">TestDeactivateUser(correctEmail@email.com, correctPassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.globant.LogOutTest" class="method navigator-link" hash-for-method="TestLogOut(correctEmail@email.com, correctPassword)">TestLogOut(correctEmail@email.com, correctPassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.globant.LoginTest" class="method navigator-link" hash-for-method="TestLogin(correctEmail@email.com, correctPassword)">TestLogin(correctEmail@email.com, correctPassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.globant.AppTest" class="method navigator-link" hash-for-method="shouldAnswerWithTrue">shouldAnswerWithTrue</a> <!-- method navigator-link -->
@@ -117,6 +137,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.globant.DeactivateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDeactivateUser(correctEmail@email.com, correctPassword)">
+                  </a> <!-- TestDeactivateUser(correctEmail@email.com, correctPassword) -->
+                  <span class="method-name">TestDeactivateUser</span>
+                  <span class="parameters">(correctEmail@email.com, correctPassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.globant.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogOut(correctEmail@email.com, correctPassword)">
+                  </a> <!-- TestLogOut(correctEmail@email.com, correctPassword) -->
+                  <span class="method-name">TestLogOut</span>
+                  <span class="parameters">(correctEmail@email.com, correctPassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.globant.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="IncorrectLogIn(incorrectEmail@email.com, incorrectPassword)">
+                  </a> <!-- IncorrectLogIn(incorrectEmail@email.com, incorrectPassword) -->
+                  <span class="method-name">IncorrectLogIn</span>
+                  <span class="parameters">(incorrectEmail@email.com, incorrectPassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLogin(correctEmail@email.com, correctPassword)">
+                  </a> <!-- TestLogin(correctEmail@email.com, correctPassword) -->
+                  <span class="method-name">TestLogin</span>
+                  <span class="parameters">(correctEmail@email.com, correctPassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -140,10 +216,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; junit=&quot;true&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test junit=&quot;true&quot; thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.globant.AppTest&quot;/&gt;
+      &lt;class name=&quot;com.globant.DeactivateUserTest&quot;/&gt;
+      &lt;class name=&quot;com.globant.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.globant.LogOutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -157,7 +236,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -167,6 +246,34 @@
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Deactivation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TestDeactivateUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">IncorrectLogIn</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TestLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Logout</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TestLogOut</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -183,16 +290,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'shouldAnswerWithTrue')
 data.setCell(0, 2, 'com.globant.AppTest')
-data.setCell(0, 3, 7);
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestDeactivateUser')
+data.setCell(1, 2, 'com.globant.DeactivateUserTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'IncorrectLogIn')
+data.setCell(2, 2, 'com.globant.LoginTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestLogOut')
+data.setCell(3, 2, 'com.globant.LogOutTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestLogin')
+data.setCell(4, 2, 'com.globant.LoginTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -207,9 +330,39 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.globant.LogOutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openTab</span>
+                <br/>
+                <span class="ignored-method-name">closeTab</span>
+                <br/>
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">openWebsite</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.globant.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openTab</span>
+                <br/>
+                <span class="ignored-method-name">closeTab</span>
+                <br/>
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">openWebsite</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -218,11 +371,62 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.DeactivateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openTab</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">openWebsite</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.globant.AppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">shouldAnswerWithTrue</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.DeactivateUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestDeactivateUser(correctEmail@email.com, correctPassword)</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">IncorrectLogIn(incorrectEmail@email.com, incorrectPassword)</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLogin(correctEmail@email.com, correctPassword)</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestLogOut(correctEmail@email.com, correctPassword)</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.DeactivateUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeTab</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
