@@ -1,34 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test suite">
-    <test name="LogIn">
-        <groups>
-            <run>
-                <include name="Login"/>
-            </run>
-        </groups>
+    <test name="Log Out">
+        <classes>
+            <class name="com.globant.LoginTest"></class>
+            <class name="com.globant.LogOutTest"></class>
+        </classes>
     </test>
-
-    <test name="Logout">
-        <groups>
-            <run>
-                <include name="Logout"/>
-            </run>
-        </groups>
-    </test>
-
-    <test name="Login">
-        <groups>
-            <run>
-                <include name="Login"/>
-            </run>
-        </groups>
-    </test>
-
-    <test name="Deactivation">
-        <groups>
-            <run>
-                <include name="Deactivation"/>
-            </run>
-        </groups>
+    <test name="Deactivate Account">
+        <classes>
+            <class name="com.globant.LoginTest"></class>
+            <class name="com.globant.DeactivateUserTest"></class>
+        </classes>
     </test>
 </suite>

@@ -7,7 +7,7 @@
     <list default="true" id="dfb15991-8cf8-4adc-907b-d606ab9fc53d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/MavenWebAutomation.iws" beforeDir="false" afterPath="$PROJECT_DIR$/MavenWebAutomation.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/globant/BaseBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/BaseBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/globant/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/globant/Suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/globant/Suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

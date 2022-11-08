@@ -21,7 +21,7 @@ public class BaseBrowser {
     public Object[][] getCorrectLogin(){
         return new Object[][] {{"correctEmail@email.com", "correctPassword"}};
     }
-    
+
 
     // Test suite Setup
     @BeforeTest
