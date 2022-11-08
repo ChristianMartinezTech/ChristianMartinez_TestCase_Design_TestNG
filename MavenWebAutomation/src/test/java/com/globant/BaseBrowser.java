@@ -21,13 +21,7 @@ public class BaseBrowser {
     public Object[][] getCorrectLogin(){
         return new Object[][] {{"correctEmail@email.com", "correctPassword"}};
     }
-
-    // Incorrect Login info
-    @DataProvider (name = "incorrectLogin")
-    public Object[][] getIncorrectLogin(){
-        return new Object[][] {{"incorrectEmail@email.com", "incorrectPassword"}};
-    }
-
+    
 
     // Test suite Setup
     @BeforeTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.444" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.427" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin"/>
-    <property name="sun.java.command" value="C:\Users\CF8F09~1.MAR\AppData\Local\Temp\surefire7268641623753378442\surefirebooter17953041286935888481.jar C:\Users\cf.martinez\AppData\Local\Temp\surefire7268641623753378442 2022-11-08T15-35-50_048-jvmRun1 surefire1965443062401479110tmp surefire_017025717140430299131tmp"/>
+    <property name="sun.java.command" value="C:\Users\CF8F09~1.MAR\AppData\Local\Temp\surefire667793124082984858\surefirebooter7487431153238508011.jar C:\Users\cf.martinez\AppData\Local\Temp\surefire667793124082984858 2022-11-08T15-43-50_653-jvmRun1 surefire5715535426736116699tmp surefire_03948190413489966831tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\cf.martinez\Desktop\TaeBootcamp\WebAutomation\ApacheMaven\ChristianMartinez_TestCase_Design_TestNG\MavenWebAutomation\target\test-classes;C:\Users\cf.martinez\Desktop\TaeBootcamp\WebAutomation\ApacheMaven\ChristianMartinez_TestCase_Design_TestNG\MavenWebAutomation\target\classes;C:\Users\cf.martinez\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\cf.martinez\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\cf.martinez\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\cf.martinez\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\CF8F09~1.MAR\AppData\Local\Temp\surefire7268641623753378442\surefirebooter17953041286935888481.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\CF8F09~1.MAR\AppData\Local\Temp\surefire667793124082984858\surefirebooter7487431153238508011.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.17+10-LTS-269"/>
@@ -62,7 +62,6 @@
   </properties>
   <testcase name="shouldAnswerWithTrue" classname="com.globant.AppTest" time="0.002"/>
   <testcase name="TestDeactivateUser" classname="com.globant.DeactivateUserTest" time="0"/>
-  <testcase name="IncorrectLogIn" classname="com.globant.LoginTest" time="0"/>
-  <testcase name="TestLogin" classname="com.globant.LoginTest" time="0"/>
+  <testcase name="TestLogin" classname="com.globant.LoginTest" time="0.001"/>
   <testcase name="TestLogOut" classname="com.globant.LogOutTest" time="0"/>
 </testsuite>
