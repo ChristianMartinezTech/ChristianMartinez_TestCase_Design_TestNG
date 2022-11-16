@@ -1,21 +1,16 @@
 package org.espn.tests;
 
+import org.espn.pages.HomePage;
 import org.testng.annotations.*;
 
 public class LogOutTest extends BaseTest{
 
     @Test
     public void LogOut(){
-        home.hoverOverUsrIcon();
-        home.clickContainerLogIn();
-        home.goToLogInIframe();
-        home.clickEmailLogIn();
-        home.inputEmail(email);
-        home.clickPasswordLogIn();
-        home.inputPassword(password);
-        home.logInButton();
+        // Logging In
+        home.loginMethods(email, password);
 
-        // Checking that the logging was successful
+        // Logging out
         home.refreshPage();
         home.hoverOverUsrIcon();
         home.clickLogOutButton();

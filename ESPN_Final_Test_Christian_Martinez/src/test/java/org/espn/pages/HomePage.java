@@ -1,6 +1,7 @@
 package org.espn.pages;
 
 import org.espn.reporting.Reporter;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,35 @@ public class HomePage extends BasePage {
     @FindBy (css = "#global-header > div.container > ul > li.user > div > div > ul.account-management > li.display-user > span")
     private WebElement accountName;
 
+    @FindBy (linkText = "ESPN Profile")
+    private WebElement espnProfile;
+
+    @FindBy (id = "AccountDeleteLink")
+    private WebElement deleteAccountButton;
+
+    @FindBy (id = "BtnSubmit")
+    private WebElement deleteAccountSubmit;
+
+    @FindBy (id = "logo")
+    private WebElement espnLoginLogo;
+
+    @FindBy (id = "BtnCreateAccount")
+    private WebElement signUp;
+
+    @FindBy (linkText = "Watch")
+    private WebElement watchButton;
+
+    @FindBy (id = "bucket-40653")
+    private WebElement tennisCarousel;
+
+    @FindBy (css = "#fittPageContainer > section > div:nth-child(1) > section > div.Carousel__Wrapper.relative.Carousel__Wrapper--canScrollRight > div > div > ul > li:nth-child(2) > a")
+    private WebElement secondCarouselItem;
+
+    @FindBy (className = "lightbox__closebtn absolute overflow-hidden lightbox__closebtn--dark")
+    private WebElement closeButton;
+
+    @FindBy (className = "AnchorLink AnchorLink--dark WatchListingsVideo__BackBtn")
+    private WebElement backButton;
 
     // Methods
     public void hoverOverUsrIcon() {
@@ -82,20 +112,91 @@ public class HomePage extends BasePage {
     }
 
     public void clickLogOutButton() {
-        //super.waitForVisibility(this.LogOutButton);
         super.clickElement(LogOutButton);
     }
 
-    public String checkAccountName() {
-        super.waitForVisibility(this.accountName);
-       return accountName.getText();
+    public void clickEspnProfile(){
+        super.waitForVisibility(espnProfile);
+        super.clickElement(espnProfile);
     }
 
-    public void nameEqual(String name) {
-        if (Objects.equals(checkAccountName(), name)) {
+    public void goToAccountIframe() {
+        super.getDriver().switchTo().frame(this.loginIframe);
+    }
+
+    public void clickDeleteAccount(){
+        super.clickElement(deleteAccountButton);
+    }
+
+    public void clickDeleteAccountSubmit(){
+        super.waitForVisibility(deleteAccountSubmit);
+        super.clickElement(deleteAccountSubmit);
+    }
+
+    public void clickWatchButton(){
+        super.waitForVisibility(watchButton);
+        super.clickElement(watchButton);
+    }
+
+    public void clickSecondCarouselItem(){
+        super.waitForVisibility(secondCarouselItem);
+        super.clickElement(secondCarouselItem);
+    }
+
+    public void clickCloseButton(){
+        super.waitForVisibility(closeButton);
+        super.clickElement(closeButton);
+    }
+
+    public void clickBackButton(){
+        super.waitForVisibility(backButton);
+        super.clickElement(backButton);
+    }
+
+    // Collection of methods to avoid clutter
+    public void loginMethods(String email, String password){
+        hoverOverUsrIcon();
+        clickContainerLogIn();
+        goToLogInIframe();
+        clickEmailLogIn();
+        inputEmail(email);
+        clickPasswordLogIn();
+        inputPassword(password);
+        logInButton();
+    }
+
+    // Log in checking methods
+    public void nameEqual(String websiteObject, String name) {
+        if (Objects.equals(websiteObject, name)) {
             Reporter.info("Name matches!");
+            System.out.println("Name matches!");
         } else {
             Reporter.error("Name does NOT match!");
+            System.out.println("Name does NOT match!");
         }
+    }
+
+    public void checkAccountName(String name) {
+        nameEqual(accountName.getText(), name);
+    }
+
+    public boolean containsEspnPlusLogo(){
+        super.waitForVisibility(espnLoginLogo);
+        return espnLoginLogo.isDisplayed();
+    }
+
+    public boolean containsSignUp(){
+        super.waitForVisibility(signUp);
+        return signUp.isDisplayed();
+    }
+
+    public boolean containsLogIn(){
+        super.waitForVisibility(LogInButton);
+        return LogInButton.isDisplayed();
+    }
+
+    public boolean containsTennisCarousel(){
+        super.waitForVisibility(tennisCarousel);
+        return tennisCarousel.isDisplayed();
     }
 }

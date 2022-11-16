@@ -8,15 +8,9 @@
     <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"/>
     <parameter name="browser" value="chrome"/>
 
-    <test name="LogIn">
+    <test name="Log In">
         <classes>
             <class name="org.espn.tests.LoginTest"/>
-        </classes>
-    </test>
-
-    <test name="LogOut">
-        <classes>
-            <class name="org.espn.tests.LogOutTest"/>
         </classes>
     </test>
 </suite>

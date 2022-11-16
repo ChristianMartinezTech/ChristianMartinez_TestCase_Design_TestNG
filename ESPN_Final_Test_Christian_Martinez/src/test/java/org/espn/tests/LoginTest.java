@@ -9,9 +9,13 @@ public class LoginTest extends BaseTest{
 
     @Test
     public void LogIn(){
+        // Login in
         home.hoverOverUsrIcon();
         home.clickContainerLogIn();
         home.goToLogInIframe();
+        Assert.assertTrue(home.containsEspnPlusLogo());
+        Assert.assertTrue(home.containsSignUp());
+        Assert.assertTrue(home.containsLogIn());
         home.clickEmailLogIn();
         home.inputEmail(email);
         home.clickPasswordLogIn();
@@ -20,6 +24,13 @@ public class LoginTest extends BaseTest{
 
         // Checking that the logging was successful
         home.hoverOverUsrIcon();
-        home.nameEqual("Chris");
+        home.checkAccountName("Chris");
+
+        // Checking Carousel
+        home.clickWatchButton();
+        home.containsTennisCarousel();
+        home.clickSecondCarouselItem();
+        home.clickCloseButton();
+        home.clickBackButton();
     }
 }
