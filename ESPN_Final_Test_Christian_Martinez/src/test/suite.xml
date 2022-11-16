@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test suite">
+    <listeners>
+        <listener class-name="org.espn.util.Listener"/>
+    </listeners>
+
+    <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="LogIn">
+        <classes>
+            <class name="org.espn.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="LogOut">
+        <classes>
+            <class name="org.espn.tests.LogOutTest"/>
+        </classes>
+    </test>
+</suite>

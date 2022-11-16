@@ -1,4 +1,28 @@
 package org.espn.reporting;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/***
+ * Reporter that is used by the listener
+ * Can report either Info, Error or Warning logs
+ */
 public class Reporter {
+    public Reporter() {};
+
+    private static Logger getLogger(){
+        return LoggerFactory.getLogger((Reporter.class));
+    }
+
+    public static void info(String text){
+        getLogger().info(text);
+    }
+
+    public static void error(String text){
+        getLogger().error(text);
+    }
+
+    public static void warning(String text){
+        getLogger().warn(text);
+    }
 }
