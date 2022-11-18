@@ -6,42 +6,43 @@ import org.testng.ITestResult;
 import org.testng.ITestContext;
 
 /***
- * Class Listener will show any logs of the text based in iTestResult, iTestContext, and the log4j file
+ * Class Listener
+ * Shows any logs of the text based in iTestResult, iTestContext, and the log4j file
  */
 public class Listener implements ITestListener{
 
     @Override
-    public void onTestStart(ITestResult iTestResult) {
-        Reporter.info("Test " + iTestResult.getName() + " Started");
+    public void onTestStart(ITestResult result) {
+        Reporter.info("Test " + result.getName() + " Started");
     }
 
     @Override
-    public void onTestSuccess(ITestResult iTestResult) {
-        Reporter.info("Test " + iTestResult.getName() + " [Succeeded]");
+    public void onTestSuccess(ITestResult result) {
+        Reporter.info("Test " + result.getName() + " [Succeeded]");
     }
 
     @Override
-    public void onTestFailure(ITestResult iTestResult) {
-        Reporter.error("Test " + iTestResult.getName() + " [Failed]");
+    public void onTestFailure(ITestResult result) {
+        Reporter.error("Test " + result.getName() + " [Failed]");
     }
 
     @Override
-    public void onTestSkipped(ITestResult iTestResult) {
-        Reporter.error("Test " + iTestResult.getName() + " [Skipped]");
+    public void onTestSkipped(ITestResult result) {
+        Reporter.error("Test " + result.getName() + " [Skipped]");
     }
 
     @Override
-    public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
-        Reporter.info("Test " + iTestResult.getName() + " [Failed within success percentage]");
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+        Reporter.info("Test " + result.getName() + " [Failed within success percentage]");
     }
 
     @Override
-    public void onStart(ITestContext iTestContext) {
-        Reporter.info("Test " + iTestContext.getName() + " [Test on start]");
+    public void onStart(ITestContext result) {
+        Reporter.info("Test " + result.getName() + " [Test on start]");
     }
 
     @Override
-    public void onFinish(ITestContext iTestContext) {
-        Reporter.info("Test " + iTestContext.getName() + " [Test on finish]");
+    public void onFinish(ITestContext result) {
+        Reporter.info("Test " + result.getName() + " [Test on finish]");
     }
 }

@@ -2,13 +2,22 @@ package org.espn.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
-import org.espn.reporting.Reporter;
-import java.util.Objects;
 
+/***
+ * Class: LoginTest
+ * Tests the login automation
+ */
 public class LoginTest extends BaseTest{
 
+    /***
+     * Method to test the login automation
+     * @param url HomePage url
+     * @param email email to Login
+     * @param password password to Login
+     */
+    @Parameters({"url", "email", "password"})
     @Test
-    public void LogIn(){
+    public void LogIn(String url, String email, String password){
         // Login in
         home.hoverOverUsrIcon();
         home.clickContainerLogIn();
@@ -22,15 +31,15 @@ public class LoginTest extends BaseTest{
         home.inputPassword(password);
         home.logInButton();
 
-        // Checking that the logging was successful
-        home.hoverOverUsrIcon();
-        home.checkAccountName("Chris");
-
         // Checking Carousel
         home.clickWatchButton();
-        home.containsTennisCarousel();
+        Assert.assertTrue(home.containsTennisCarousel());
         home.clickSecondCarouselItem();
         home.clickCloseButton();
-        home.clickBackButton();
+
+        // Checking that the logging was successful
+        home.goHomepage(url);
+        home.hoverOverUsrIcon();
+        Assert.assertTrue(home.checkAccountName("Chris"));
     }
 }

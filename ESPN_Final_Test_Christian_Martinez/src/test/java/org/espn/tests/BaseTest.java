@@ -1,30 +1,25 @@
 package org.espn.tests;
 
 import org.espn.configuration.Driver;
-import org.espn.configuration.Driver;
 import org.espn.pages.HomePage;
 import org.espn.reporting.Reporter;
-import org.testng.Assert;
 import org.testng.annotations.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-
-import java.util.Objects;
-
 import static java.lang.String.format;
 
+/***
+ * BaseTest Class
+ * This class is used to store the methods that will be used before and after the test
+ */
 public class BaseTest {
-    final String email = "Aloha.1234@gmail.com";
-    final String password = "Aloha.1234";
     private Driver driver;
     protected HomePage home;
 
+    /***
+     * SetUp methods executes multiple operations before the creation of the new session
+     * @param browser browser name (either Chrome or Firefox)
+     * @param url Homepage URL
+     */
     @Parameters({"browser", "url"})
-
     @BeforeTest
     public void setUp(String browser, String url){
         driver = new Driver(browser);
@@ -38,6 +33,9 @@ public class BaseTest {
         home = new HomePage(driver.getDriver());
     }
 
+    /***
+     * Ends the session
+     */
     @AfterTest
     public void endSession(){
         driver.getDriver().quit();

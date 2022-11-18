@@ -9,11 +9,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import static java.lang.String.format;
 
 /***
- * Driver class will have the public method to
+ * Class: Driver
+ * This class determines whether the browser is Chrome or Firefox and initializes the driver
  */
 public class Driver {
     private WebDriver driver;
 
+    /***
+     * Driver Constructor.
+     * @param browser Either Chrome or Firefox.
+     */
     public Driver(String browser){
         if (browser.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
@@ -28,6 +33,10 @@ public class Driver {
         }
     }
 
+    /***
+     *  Method that returns a reference to the WebDriver initialized.
+     * @return WebDriver for the subclasses to reference the driver intialized
+     */
     public WebDriver getDriver() {
         return driver;
     }

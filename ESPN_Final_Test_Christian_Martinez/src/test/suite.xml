@@ -7,10 +7,13 @@
 
     <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"/>
     <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="Aloha.12345@gmail.com"/>
+    <parameter name="password" value="Aloha.12345"/>
 
-    <test name="Log In">
+    <test name="Deactivate Account">
         <classes>
-            <class name="org.espn.tests.LoginTest"/>
+            <class name="org.espn.tests.DeactivateAccountTest"/>
         </classes>
     </test>
+
 </suite>
