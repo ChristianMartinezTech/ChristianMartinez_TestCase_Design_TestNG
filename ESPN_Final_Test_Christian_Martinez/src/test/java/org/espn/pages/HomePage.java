@@ -62,7 +62,7 @@ public class HomePage extends BasePage {
     @FindBy (id = "AccountDeleteLink")
     private WebElement deleteAccountButton;
 
-    @FindBy (id = "BtnSubmit")
+    @FindBy (css = "#TextBlock + #BtnSubmit")
     private WebElement deleteAccountSubmit;
 
     @FindBy (id = "logo")
@@ -82,6 +82,9 @@ public class HomePage extends BasePage {
 
     @FindBy (css = ".lightbox__closebtn")
     private WebElement closeButton;
+
+    @FindBy (css = "#Title > span")
+    private WebElement accountDeactivated;
 
 
     // Methods

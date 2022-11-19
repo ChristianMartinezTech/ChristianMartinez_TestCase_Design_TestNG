@@ -1,5 +1,6 @@
 package org.espn.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -25,11 +26,9 @@ public class DeactivateAccountTest extends BaseTest{
         home.hoverOverUsrIcon();
         home.clickEspnProfile();
         home.goToLogInIframe();
-        //home.moveToDelete();
+        home.moveToDelete();
         home.clickDeleteAccount();
         home.clickDeleteAccountSubmit();
-
-        // Logging In
         home.goHomepage(url);
     }
 }
